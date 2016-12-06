@@ -7,7 +7,7 @@
     @endforeach
 
     <!-- Pagination -->
-    @if($news->lastPage() > 2)
+    @if($news->lastPage() >= 2)
         <ul class="pagination">
             <li><a href="{!! $news ->url(1)!!}">Первая</a></li>
         </ul>

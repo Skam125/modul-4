@@ -251,7 +251,7 @@
         <hr>
     @endforeach
     <!-- Pagination -->
-    @if($messages->lastPage() > 2)
+    @if($messages->lastPage() >= 2)
         <ul class="pagination">
             <li><a href="{!! $messages ->url(1)!!}">Первая</a></li>
         </ul>
